@@ -5,7 +5,7 @@ Raspberry Pi auto-loading video looper using omxplayer.
 
 1. clone repo to /home/pi/
 2. sudo mkdir /video in home diretory (/home/pi)
-3. place videos in /video directory
+3. place video(s) in /video directory
 4. sudo nano /etc/profile
 5. insert the following three lines of code at the bottom of profile:
 
