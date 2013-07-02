@@ -4,10 +4,15 @@ loopVideo
 Raspberry Pi auto-loading video looper using omxplayer.
 
 1. clone repo to /home/pi/
-2. sudo mkdir video in home diretory (/home/pi)
-3. place video(s) in /video directory
-4. sudo nano /etc/profile
-5. insert the following three lines of code at the bottom of profile:
+2. Make the script executable with:
+
+sudo chmod a+x ./loopVideo.sh
+
+
+3. sudo mkdir video in home diretory (/home/pi)
+4. place video(s) in /video directory
+5. sudo nano /etc/profile
+6. insert the following three lines of code at the bottom of profile:
 
 setterm -term linux -background black
 
@@ -26,4 +31,10 @@ Although this will loop the video there is a 1 second black screen between stop 
 
 TO-DO:
 
-1. implement auto login on the pi 
+1. implement auto login on the pi
+
+REFERENCE:
+
+Script code from:
+http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/
+
