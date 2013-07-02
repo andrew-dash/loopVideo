@@ -1,17 +1,17 @@
 #!/bin/sh
 
-# get rid of the cursor so we don't see it when videos are running
+# clear terminal text, set background to black, and hide the cursor
 setterm -cursor off
 setterm -term linux -background black
 setterm -term linux clear
 
-# set here the path to the directory containing your videos
+# this is the path to the directory containing your videos
 VIDEOPATH="/home/pi/video" 
 
-# you can normally leave this alone
+# leave this alone
 SERVICE="omxplayer"
 
-# now for our infinite loop!
+# infinitely loop through any video files in VIDEOPATH 
 while true; do
         if ps ax | grep -v grep | grep $SERVICE > /dev/null
         then
