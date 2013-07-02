@@ -16,7 +16,8 @@ setterm -term linux clear
 ./loopVideo.sh
 
 --> This will set the terminal background to black and clear the text
-Although this will loop the video there is a 1 second black screen between stop and stary
+
+Although this will loop the video there is a 1 second black screen between stop and start
 
 (ctrl + c to stop playing at any time)
 
@@ -24,4 +25,5 @@ Although this will loop the video there is a 1 second black screen between stop 
 7. after logging in the video should start playing immediately.
 
 TO-DO:
+
 1. implement auto login on the pi 
