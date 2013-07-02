@@ -10,7 +10,9 @@ Raspberry Pi auto-loading video looper using omxplayer.
 5. insert the following three lines of code at the bottom of profile:
 
 setterm -term linux -background black
+
 setterm -term linux clear
+
 ./loopVideo.sh
 
 --> This will set the terminal background to black and clear the text
