@@ -31,7 +31,8 @@ Although this will loop the video there is a 1 second black screen between stop 
 
 TO-DO:
 
-1. implement auto login on the pi
+- implement auto login on the pi
+- seamlessly loop videos 
 
 REFERENCE:
 
