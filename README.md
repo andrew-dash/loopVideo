@@ -3,16 +3,16 @@ loopVideo
 
 Raspberry Pi auto-loading video looper using omxplayer.
 
-1. clone repo to /home/pi/
-2. Make the script executable with:
+- clone repo to /home/pi/
+- Make the script executable with:
 
 sudo chmod a+x ./loopVideo.sh
 
 
-3. sudo mkdir video in home diretory (/home/pi)
-4. place video(s) in /video directory
-5. sudo nano /etc/profile
-6. insert the following three lines of code at the bottom of profile:
+- sudo mkdir video in home diretory (/home/pi)
+- place video(s) in /video directory
+- sudo nano /etc/profile
+- insert the following three lines of code at the bottom of profile:
 
 setterm -term linux -background black
 
