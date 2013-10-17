@@ -26,16 +26,30 @@ Although this will loop the video there is a 1 second black screen between stop 
 
 (ctrl + c to stop playing at any time)
 
-6. sudo reboot
-7. after logging in the video should start playing immediately.
+- to automically login:
+
+sudo nano /etc/inittab
+
+- scroll down to and comment out: (with "#")
+ 
+1:2345:respawn:/sbin/getty 115200 tty1
+
+- then enter in the next line:
+
+1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
+
+- Save and exit. Pi will automatically login and play/loop your videos
+
 
 TO-DO:
 
-- implement auto login on the pi
 - seamlessly loop videos 
 
 REFERENCE:
 
 Script code from:
 http://www.cenolan.com/2013/03/looping-video-playlist-omxplayer-raspberry-pi/
+
+Auto-login code from:
+http://elinux.org/RPi_Debian_Auto_Login
 
